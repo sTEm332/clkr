@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <!-- <meta charset="utf-8" />-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
+  				@keyframes aanim {
+  				0%{
+  				
+  				}100%{
+  				transform: translateY(10px);
+  				opacity: 0%;
+transform: rotateY(deg10);
+  				
+  				}		
+  				}@keyframes res {
+				from{
+color: red;
+}to{
+color: green;
+}
+}
+  				body{
+font-family: 'Nunito',sans-serif;
+height: 100%;
+user-select: none;
+  				background: #333;
+scroll-behavior:smooth;
+  				}
+  	#main{
+  	position:relative;
+  	margin: 0 auto;
+  	margin-topwi5%;
+  	width: 300px;
+  	height: 300px;
+  	border: solid white 1px;
+  	background-color: #232323;
+  	border-radius: 20px;
+  	
+  	}
+  				#bdiv{
+  				position: relative;
+  				width: 100px;
+  				margin:  auto;
+  				background-color: ;
+  				top: 70%;
+  				height: 50px;
+  				
+  				}
+  	#mineb{
+  	position: absolute;
+  	width: 100px;
+  	background-color:black;
+  	border: solid white 1px;
+  	border-radius: 5px;
+  	color: white;
+  	/*bottom: 10px;*/
+  	height: ;
+  	padding:  10px;
+box-shadow: 1px 1px 10px white;
+  	}
+  	#mineb:active {
+  background-color: red;
+  box-shadow: 1px 1px 6px red;
+  transform: translateY(4px);
+}
+#res{
+margin: 5px;
+color: white;
+position: fixed;
+z-index: 3;
+background:#333;
+opacity: 50%;
+
+
+}
+#actionbar{
+width: 300px;
+position: fixed;
+top:  ;
+margin: 0 auto;
+color: white;
+background-color:  ;
+text-align: center;
+font-size:  200%;
+z-index: 10;
+margin-top:  1%;
+}
+#btex{
+position: absolute;
+background: ;
+width:  98%;
+text-align: center;
+top: 400px;
+color:  white;
+transition-duration: 0.5s;
+}
+.button{
+width: 100px;
+  	background-color:black;
+  	border: solid white 1px;
+  	border-radius: 5px;
+  	color: white;
+  	/*bottom: 10px;*/
+  	height: ;
+  	padding:  10px;
+position: absolute;
+width: 100px;
+transform: translate(-50%, -50%); 
+right: 1px;
+}#saveb{
+position: absolute;
+width: 100px;
+transform: translate(-50%, -50%); 
+right: 1px;
+}#bsaved{
+position: relative;
+width: 100px;
+margin: 0 auto;
+margin-top:  95%;
+margin-right: 5%  ;
+
+}#magdiv{
+position: relative;
+width: 300px;
+background: #333;
+color: white;
+left: 10px;
+margin-top: -90%;
+height: ;
+padding: 1px 0px;
+border:solid white 1px ;
+border-radius: 10px;
+}.magop{
+background: #d9edd9;
+color: black;
+margin:  10px 0;
+padding: 5px 0px;
+font-size: 110%;
+}
+.indicator{
+position: absolute;
+width: 12px;
+height: 12px;
+margin-top:-9%;
+margin-left: 95%;
+font-size: 70%;
+
+border: solid black 1px;
+border-radius: 50%;
+text-align: center;
+padding: 1%;
+background: #ffbd40;
+z-index: 3;
+padding-top:  ;
+
+padding: ;
+}#chindicator{
+display: none;
+
+}#settings{
+display:none  ;
+position: absolute;
+position: absolute;
+width: 100px;
+transform: translate(-50%, -50%); 
+right: 1px;
+}#sbdiv{
+position: relative;
+width: 100px;
+margin: 0 auto;
+margin-top:  95%;
+margin-left: 5%  ;
+}#hmenu{
+display:none;
+width: 99%;
+background:white;
+position: relative;
+margin-top:65% ;
+background :#1e1e1e  ;
+padding: 5px;
+border: 1px solid white;
+border-radius: 10px;
+color: white;
+}#fcheck::after{
+box-shadow: 1px 1px 1px 30px red;
+
+}#settmenu label{
+color: #dd0009;
+text-align: center;
+}#settmenu #closesett{
+width: 20px;
+font-weight: 300%;
+}.span{
+display: block;
+}
+.span::first-line{
+position: relative;
+padding-left: 10px;
+color: red;
+}
+
+#hmenu div{
+margin-left: 10px;
+}#fex{
+width: 32px;
+height: 32px;
+}#hmenu .close{
+position: absolute;
+margin-left: 95%;
+color: white;
+}
+#hmenu li{
+color: red;
+}.exmond{
+position: absolute;
+    margin-top: 50%;
+    padding: 20px;
+    border: black solid 1px;
+    border-radius: 10px;
+    margin-left: 10px;
+    z-index: 2;
+    background-color: whitesmoke;
+}#exmon{
+ position: relative;
+    backgrond: red;
+    border: 1px solid black;
+    background-color: #d9edd9;
+
+}.exmond .xe{
+color: #ff153f;
+}#exmond.in{
+  position: absolute;
+}
+
+  </style>
+</head>
+<body>
+ 
+ <div id="res">
+  	<span> $: </span><span id="money">0</span><br/>
+  	<span>💎: </span> <span id="diam">0</span>
+  	  	</div>			
+
+  				<div id="exmondi" class="exmond">
+<div onclick="exmondcl()" class="xe">x</div>
+<div id="in">xyuwjw</div>
+
+
+<input id="exmon" type="number">
+<button onclick="em()" id="emb">Ok</button><button onclick="emall()">Все</button>
+
+</div>
+  				
+  			<div id="main">  													  							<div id="actionbar"></div>
+   							<div id="bdiv">
+  											<button class="button" onclick="mine()"  id="mineb">КЛИК!</button>
+  					</div>  
+  				</div>	
+ <div class="" id="bsaved">
+
+ <button onclick="save()" class="button" id="saveb">Сохранить</button>
+ </div>
+<div id="sbdiv">
+<button class="button" onclick="hop()" id="help">Справка</button>
+</div>
+
+
+<!-- huuuui -->
+
+
+
+
+
+ <div class="" id="btex"></div>
+ <div id="magdiv">
+<div class="magop" onclick="exmondop()" id="diamEx">Обмен кристаллов</div>
+<div class="magop" id="">Увеличить продуктивность клика</div>
+<div class="magop" onclick="getdd()" id="">Увеличить шанс выпадения алмазов</div>
+<div class="magop" onclick="comchest()" id="">Открыть сундук за 15💎<div class="indicator" id="chindicator">1</div></div>
+</div> 
+<div id="hmenu"> 
+<div onclick="hcl()" class="close">X</div>
+<ul>
+<li>Выпадение бесплатных сундуков</li>
+<div>
+Каждые 60 секунд выпадает бесплатный сундук,это значит то,что вы не потратите денег.понять ,что сундук выпал можно с помощью индикатора ,который выглядит вот так:<img id="fex" src="fex.jpg" alt="Загрузка">
+</div>
+<li>Выпадение кристаллов</li>
+<div id="diaminf">
+шанс выпадения кристалов ~Х%.Количество кристаллов,что можно добыть ,случайно.
+</div>
+<li>Обмен кристалов</li>
+<div>Кристалы обмениваются  в соотношении 1 к 1000.1 кристалл=1000$</div>
+<li></li>
+
+
+</ul>
+
+
+
+  </div>
+
+
+
+
+ <script type="text/javascript">
+  var xyz =document.getElementById('exmondi')
+ 			var	miningpower=1
+ 			var max_miningp=200
+ 			var money=0
+ 			var diam=0
+ 			var diamdropch=980
+var busy =false
+ 			var maxdiamdr=10
+var chind=document.getElementById("chindicator")
+var freechest=0
+var ioi =true 
+
+function em(){
+var eel=document.getElementById("exmon")
+let ma1=eel.value*1000
+
+if (ma1>0) {
+var cf =confirm("обменять " +ma1 +"$ На "+eel.value+"💎")
+}else{
+  cf=false
+  console.log("cf :false")
+}
+
+if (cf){
+
+  if(money>=ma1){
+money-=ma1
+console.log("cf:true")
+diam+=parseInt(eel.value)
+alert("успешно")
+}else{
+  console.log('semen')
+  var exmonid =document.getElementById('exmon')
+  exmonid.style.backgroundColor='red'
+  setTimeout(()=>exmonid.style.backgroundColor='#d9edd9',1000)
+}
+
+}else{
+  alert("Невозможно обменять 0")
+}
+}
+function emall() {
+  var eel=document.getElementById("exmon")
+let  x=Math.round( money/1000)
+
+if (money/1000<x) {
+  eel.value=x-1
+  console.log('1')
+
+}else{
+  eel.value=x
+  console.log('2')
+}
+}
+function exmondcl(){
+  
+  xyz.style.display='none'
+  console.log(xyz)
+}
+function exmondop(){
+  var xyz =document.getElementById('exmondi')
+  xyz.style.display='block'
+   console.log(xyz)
+}
+function getdd(){
+ if(!abilities.morediam){
+   var mp=confirm("Данная покупка обойдётся в 10к$\nкупить?")
+   if(mp){
+     if(money>=10000){
+       money-=10000
+     abilities.morediam=true
+     
+     diamdropch=950
+     alert("Шанс увеличен")
+     }else{
+       let matr=10000-money
+       alert("Недостаточно средств \nнужно еще "+matr)
+     }
+   }
+ }else{
+   alert("Улучшение уже имеется")
+ }
+  
+}
+
+var abilities ={
+"clickpower":false,
+ "morediam":false,
+
+}
+
+
+
+//alert(abilities.morediam)
+document.body.style.height=window.screen.availHeight*1
+let wpoe =document.getElementById("btex").style.top=window.screen.availHeight-200+"px"
+
+function hcl () {
+window.scrollBy({ top: -400, left: 0, behavior : "smooth" })
+  
+	setTimeout(()=>{ 
+	let x =document.getElementById("hmenu")
+
+	x.style.display="none"},500)
+}
+
+
+
+function hop () {
+
+let x =document.getElementById("hmenu")
+x.style.display="block"
+
+setTimeout(()=> {
+window.scrollBy({ top: 400, left: 0, behavior : "smooth" })} ,100)
+}
+//window.addEventListener("beforeunload", function (){
+//return "leave page?"
+//} )
+
+function freechestd () {
+
+				freechest++
+actionbaralert("Количество бесплатных сндуков " +freechest,false)
+//setTimeout(actionbaralert("Количество бесплатных сндуков " +freechest,),2000)
+chind.textContent=freechest
+chind.style.display="block"
+}
+function comchest () {
+if (freechest>=1) {
+			diam += 15
+freechest--
+actionbaralert("вы открыли бесплатный сундук,осталось " +freechest+"штук")
+}
+if (diam>=15) {
+ diam-=15
+var monr=Math.ceil(Math.random()*10000)
+var diamr=Math.ceil(Math.random()*1000)
+alert("Выпало " + monr+"$")
+money+=monr
+if (diamr>900) {
+var diamrand=Math.ceil(Math.random()*5)
+if (diamrand!=0||diamrand<=5) {
+				
+
+			alert("Выпало "+diamrand+" 💎")	
+diam+=diamrand
+}
+}
+
+}else{
+
+let	mclc=15-diam
+alert("Недостаточно "+mclc+"💎")
+}
+				
+}
+ 		var	diamdroped=false
+
+function actionbaralert (msg,busy) {
+
+
+if (!busy){
+
+busy=true
+console.log("actbaralert")
+
+	var g =document.getElementById("actionbar")
+g.style.color="white"
+g.textContent=msg
+g.style.animationName="res"
+g.style.animationDuration='0.1s'
+setTimeout(()=>{
+g.textContent="";busy =false
+},2000)
+}
+}
+
+function qwe () {
+				
+
+if (localStorage.getItem("money")) {
+				
+
+var loadconf =confirm("У вас наидено сохранение \nхотите загрузить?")
+if (loadconf) {
+				load()
+}
+}}
+ 			function mine () {
+ 			
+ 			rn=Math.ceil(Math.random()*max_miningp)
+ 							money+=rn 
+ 						//	console.log(rn)
+ 							diamrn=Math.ceil(Math.random()*1000)
+ 			
+ 			if (diamrn>diamdropch) {
+ 			var ma =Math.ceil(Math.random()*maxdiamdr)
+ 							diam+=ma
+ 							diamdroped=true
+ 			}else{
+diamdroped=false
+}
+ 		if (diamdroped) {
+
+ 		let a =document.getElementById("actionbar")
+a.style.display="block"
+a.style.animation="res 0.1s"
+
+
+ 		a.textContent="Выпали алмазы("+ ma+")"
+a.style.color="#55acff"
+a.style.animation="aanim 2s "
+setTimeout(()=>{
+
+a.style.display="none";},1999)
+ 		}
+
+ 			}
+ 				function grp () {
+ 						let a =document.getElementById("bdiv")		
+ 						a.innerHTML="<span>"+ miningpower+"</span>"
+ 				}
+ 				function fps () {
+/*var asc=document.getElementById("fcheck")
+if (!asc.checked) {
+		alert("hui")		
+clearInterval(autosave)
+}
+else {
+clearInterval(autosave)
+var autosave =setInterval(save,30000)
+}*/
+let hukejs =document.getElementById("in")
+let el=document.getElementById("exmon")
+
+
+hukejs.textContent=el.value*1000+"$"
+
+
+
+let maht=1000- diamdropch
+let mahtf=maht/10
+let hui = document.getElementById("diaminf").innerHTML="шанс выпадения кристалов ~"+ mahtf +"%.Количество кристаллов,что можно добыть ,случайно."
+
+ 								let a =document.getElementById("money")
+ 					let s =document.getElementById("diam")
+ 					a.textContent=money
+ 					s.textContent=diam
+if (freechest==0) {
+				chind.style.display="none"
+}
+chind.textContent=freechest
+ 								
+ 				}
+function save () {
+let g =document.getElementById("btex")
+g.textContent="игра сохранена!"
+console.log("saved")
+setTimeout(()=>{ g.textContent=''},1000)
+
+localStorage.setItem("money", money)
+localStorage.setItem("diam",diam )
+console.log(  localStorage.getItem("diam") + " saved diam")
+console.log("saved money "+ localStorage.getItem("money"))
+
+}
+
+function load () {
+let g =document.getElementById("btex")
+g.textContent="игра загружена!"
+
+		money+=parseInt(localStorage.getItem("money"))
+diam+=localStorage.getItem("diam")*1
+
+}var autosave =setInterval(save,30000)
+ 				setInterval(fps,100)
+var st =document.getElementsByTagName("style")
+setTimeout(qwe,200)
+setInterval(freechestd,60000)
+ </script>
+</body>
+</html>
