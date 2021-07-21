@@ -1,1 +1,1 @@
-# now server files is updating
+# now server files are updating
